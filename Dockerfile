@@ -10,7 +10,8 @@ COPY package*.json ./
 # Install project dependencies
 RUN npm i -g vercel
 RUN vercel link
-RUN npm install
+RUN pnpm install
+RUN pnpm dev
 
 # Copy the project files into the container
 COPY . .
