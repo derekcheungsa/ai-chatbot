@@ -8,6 +8,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install project dependencies
+RUN npm i -g vercel
 RUN npm install
 
 # Copy the project files into the container
